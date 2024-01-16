@@ -1,0 +1,23 @@
+[
+    {
+        "name": "张三",
+        "math": 1,
+        "english": 1,
+        "chinese": 1,
+        "total": 3
+    },
+    {
+        "name": "李四",
+        "math": 80,
+        "english": 88,
+        "chinese": 92,
+        "total": 260
+    },
+    {
+        "name": "王五",
+        "math": 85,
+        "english": 83,
+        "chinese": 90,
+        "total": 258
+    }
+]
