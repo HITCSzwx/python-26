@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/static/css/bootstrap.css">
+</head>
+<body>
+<table class="table" style="width: 600px;margin: 100px auto">
+    <thead>
+    <tr>
+        <th scope="col">姓名</th>
+        <th scope="col">语文</th>
+        <th scope="col">数学</th>
+        <th scope="col">英语</th>
+        <th scope="col">操作</th>
+    </tr>
+    </thead>
+    <tbody>
+    {#
+        需要将 Python 对象的数据显示到浏览器上，模板语法
+        jinja2(flask) numjucks(javascript) moka(django) vue
+
+        jinja2 可以直接在 html 中写 python 的逻辑
+    #}
+
+    {% for stu in students %}
+        <tr>
+            <th>{{ stu.name }}</th>
+            <td>{{ stu.chinese }}</td>
+            <td>{{ stu.math }}</td>
+            <td>{{ stu.english }}</td>
+            <td><a href="/delete?name={{ stu.name }}">删除</a> <a href="/change?name={{ stu.name }}">修改</a></td>
+        </tr>
+    {% endfor %}
+    </tbody>
+
+</table>
+
+<div class="container" style="width: 600px;margin: 10px auto">
+    <!-- Content here -->
+    <div class="row">
+        <div class="col-4">
+            <a href="/add">新增学员信息</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
