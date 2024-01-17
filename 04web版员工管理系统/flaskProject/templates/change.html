@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/static/css/layui.css">
+</head>
+<body>
+{#有没有现成的内容可以给我使用 ?
+{#    1. 从零开始学前端,然后自己从零开始写
+{#    2. 直接用别人写好的东西,然后修改一些内容#}
+<div style="width: 500px;height: 400px;margin: 100px auto;">
+    <form class="layui-form" action="/changed/{{ user.name }}" method="POST">
+        <div class="layui-form-item">
+            <label class="layui-form-label">用户名</label>
+            <div class="layui-input-block">
+                <input type="text" name="name" required
+                       lay-verify="required" placeholder="请输入用户名"
+                       autocomplete="off"
+                       value="{{ user.name }}"
+                       class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">部门</label>
+            <div class="layui-input-block">
+                <input type="text" name="department" required
+                       lay-verify="required" placeholder="请输入部门"
+                       autocomplete="off"
+                       value="{{ user.department }}"
+                       class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">职位</label>
+            <div class="layui-input-block">
+                <input type="text" name="position" required
+                       lay-verify="required" placeholder="请输入职位"
+                       autocomplete="off"
+                       value="{{ user.position }}"
+                       class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">工资</label>
+            <div class="layui-input-block">
+                <input type="text" name="salary" required
+                       lay-verify="required" placeholder="请输入工资"
+                       autocomplete="off"
+                       value="{{ user.salary }}"
+                       class="layui-input">
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <div class="layui-input-block">
+                <button class="layui-btn" lay-submit lay-filter="formDemo">立即提交</button>
+                <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+            </div>
+        </div>
+    </form>
+</div>
+<script src="/static/layui.js"></script>
+<script>
+  //Demo
+  layui.use('form', function () {
+    var form = layui.form
+    /*
+    //监听提交
+    form.on('submit(formDemo)', function (data) {
+      layer.msg(JSON.stringify(data.field))
+      // 可以发送动态请求
+      return false
+    })
+    */
+  })
+</script>
+</body>
+</html>
