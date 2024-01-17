@@ -1,2 +1,2 @@
-# python-26
-python26个实战项目
+# python-26个实战项目
+[![Github Watchers](https://img.shields.io/github/watchers/HITCSzwx/python-26.svg?style=flat&label=watchers&color=blue)](https://github.com/HITCSzwx/python-26/watchers)  [![Github Stars](https://img.shields.io/github/stars/HITCSzwx/python-26.svg?style=flat&label=stars&color=yellow)](https://github.com/HITCSzwx/python-26/stargazers)  [![Github Forks](https://img.shields.io/github/forks/HITCSzwx/python-26.svg?style=flat&label=forks&color=green)](https://github.com/HITCSzwx/python-26/network/members)  [![Github Repository Size](https://img.shields.io/github/repo-size/HITCSzwx/python-26.svg?style=flat&label=repo-size&color=orange)](https://github.com/HITCSzwx/python-26)
