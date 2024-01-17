@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Find Video</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <script type="application/x-javascript"> addEventListener("load", function () {
+        setTimeout(hideURLbar, 0);
+    }, false);
+
+    function hideURLbar() {
+        window.scrollTo(0, 1);
+    } </script>
+    <link href="/static/css/bootstrap.css" rel='stylesheet' type='text/css'/>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- Custom Theme files -->
+    <link href="/static/css/style.css" rel='stylesheet' type='text/css'/>
+    <!-- Custom Theme files -->
+    <!--webfont-->
+    <link href="/static/fonts/glyphicons-halflings-regular.eot" rel='stylesheet' type='text/css'>
+    <link href="/static/fonts/glyphicons-halflings-regular.ttf" rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="/static/js/jquery-3.2.1.min.js"></script>
+    <script src="/static/js/menu_jquery.js"></script>
+</head>
+<body>
+
+<div class="banner">
+    <div class="container">
+        <div class="span_1_of_1">
+            <h2>视频搜索<br></h2>
+            <div class="search">
+                <ul class="nav1">
+                    <li id="search">
+                        <form action="/result" method="post">
+                            <input type="text" name="search_text" id="search_text" placeholder="剧名,演员"/>
+                            <input type="submit" name="search_button" id="search_button" value=" ">
+                        </form>
+                    </li>
+                    <li id="options">
+                        <a href="/index"> 搜 索 </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="grid_3">
+    <p>Copyright © 2019 Littlecowherd. All Rights Reserved.</p>
+    <p>如果想要了解python 的童鞋请加婧琪老师哦！</p>
+    <p>微信号: python_luojia</p>
+</div>
+</body>
+</html>
